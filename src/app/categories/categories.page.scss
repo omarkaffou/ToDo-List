@@ -1,0 +1,22 @@
+ion-content{
+  --background: linear-gradient(#ffebef, #fcfcf3 , #fafff6);
+    p{
+      font-size: 16px;
+      line-height: 22px;
+      color: #8c8c8c;
+      margin: 0;
+      font-weight: 300;
+    }
+    ion-card{
+        border-radius: 24px;
+    }
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+    
+      .card {
+        display: inline-block;
+      }
+    }
+}

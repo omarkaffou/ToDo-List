@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>calendar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class='date'>{{ currentMonth }}</div>
+<ion-card>
+  <calendar id="myCalendar"
+  calendarMode="month" 
+  startHour="6"
+  endHour="20"
+  step="30"
+  startingDayWeek="1"
+  [currentDate]="currentDate"
+  (onTitleChanged)="onViewTitleChanged($event)">
+</calendar>
+</ion-card>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="addNewItem()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+  </ion-fab>
+</ion-content>

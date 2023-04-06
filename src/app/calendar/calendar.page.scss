@@ -1,0 +1,11 @@
+ion-content{
+    --background: linear-gradient(#ffebef, #fcfcf3 , #fafff6);
+    .date{
+        text-align: center;
+        margin-top:20px;
+        font-size: 16px;
+    }
+    div{
+        --background: #ffffff;
+    }
+}

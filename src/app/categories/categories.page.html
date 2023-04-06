@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-scroll scrollX="true">
+  <ion-card *ngFor="let category of categories ; let i=index" (click)='goToTask()'>
+    <ion-card-content>
+      {{category.name}}<br>
+      <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+      {{category.nb}}%
+    </ion-card-content>
+  </ion-card >
+  </ion-scroll>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="promptNewCategory()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    </ion-fab>
+</ion-content>
